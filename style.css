@@ -433,6 +433,7 @@
     .testimonials{
         flex-direction: column;
         margin: 20px 60px;
+        gap: 10px;
     }
     .users{
         display: flex;
