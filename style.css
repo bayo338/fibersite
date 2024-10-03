@@ -2,10 +2,7 @@
     margin: 0;
     padding: 0;
     /* font-family: Arial, Helvetica, sans-serif; */
-
-
-
-  font-family: "Inter", sans-serif;
+    font-family: "Inter", sans-serif;
   /* font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal; */
@@ -30,6 +27,7 @@
 
 }
 .logo:hover{
+    /* color: #6a29ff; */
     color: red;
 }
 /* .nav-links{
@@ -76,17 +74,8 @@
     color: black;
     
 }
-.signin::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #6a29ff;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-.signin:hover::after{
-    width: 100%;
+.signin a:hover{
+    color: #1b0550;
 }
 .signup{ 
     background-color: #6a29ff;
@@ -146,22 +135,7 @@
     .bar{
         display: block;
     }
-    .Abtn{
-        flex-direction: column;
-        align-items: stretch;
     
-    }
-    /* .freetrail {
-        flex: 1;
-        text-align: center;
-    } */
-    .VExaples{
-        width: 150px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-    }
 }
 
 /* SECTION 2 */
@@ -172,6 +146,7 @@
     gap: 100px;
     background-color: #f9f9f9;
     background-color: white;
+    
 }
 
 
@@ -195,55 +170,77 @@
 .Rside{   
     /* background-color: blue; */
     /* padding-left: 0px; */
-    width: 80%;
+    /* width: 80%;
     align-items: center;
-    display: flex;   
+    display: flex;    */
 }
 
-.Rside img{
+.Rside{
     width: 100%;
-    /* height: 100%; */
-    object-fit: cover;
-    
+    height: 600px;
+       
  }
 
 @media (max-width:1100px)
 {
     .navbar{
-        padding: 20px 50px;
+        padding: 20px 20px;
+        /* width: 100%; */
     }
 
     .about{
         flex-direction: column-reverse;
-        /* max-width: 100%;
-        width: 90%; */
         gap: 2px;
-        margin: 10px 30px;
-        align-items: center;
-        /* background-color: blueviolet; */
+        margin: 0px 0px;
+        padding: 0px 30px;
+        /* padding: 0px 0px; */
         /* align-items: center; */
+        /* width: 100%; */
+        /* background-color: blueviolet; */
+       
              
     }
-    .Lside{
-        padding-left: 30px;
-        padding-right: 30px;
-        /* align-items: center; */
-        
-    }
     
-    .Rside{
-       width: 100%;
-       /* align-items: center;             */
-    }
     .Lside{
-        /* align-items: center; */
-        margin-top: 30px;
+        width: 100%;        
+        margin-top: 30px;       
     }
+    /* .rating{
+        background-color: blue;
+    }
+    .create{
+        
+        background-color: yellow;        
+    }  */
+    
+    
+    .Abtn{
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        /* background-color: yellow; */
+    
+    }
+    .freetrail {
+        /* flex: 1; */
+        /* text-align: center; */
+        width: 100%;
+    }
+    .VExaples{
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    .Rside{
+        width: 100%;
+        margin-top: -10px; 
+        /* align-items: center;  */
+     }
     
     
 }
-
-
 
 .tickmark{
     display: flex;
@@ -251,9 +248,11 @@
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 18px;
+    width: 100%;
 }
 .tk{
     margin-right: 10px;
+    width: 100%;
 }
 
 @media (max-width:700px){
@@ -262,9 +261,9 @@
     }
     .tk{
         margin-top: 10px;
-
     }
 }
+
 .why{
     padding: 20px 80px;
     /* background-color: yellow; */
@@ -295,7 +294,8 @@
 }
 @media(max-width:1100px){
     .why{
-        padding: 20px 60px;
+        padding: 20px 30px;
+        /* width: 100%; */
     }
     .features{
         flex-direction: column;
@@ -309,6 +309,7 @@
     background-color: #6a29ff;
     margin: 20px 80px;
     border-radius: 15px;
+   
 }
 .dLside{
     width: 50%;
@@ -367,7 +368,8 @@
     .diversify{
         flex-direction: column;
         height: fit-content;
-        margin: 20px 60px;                 
+        margin: 20px 30px;
+        /* width: 100%;*/
     }
 
     .dRside{
@@ -432,8 +434,8 @@
 @media(max-width: 1100px){
     .testimonials{
         flex-direction: column;
-        margin: 20px 60px;
-        gap: 10px;
+        margin: 20px 30px;
+        /* width: 100%; */
     }
     .users{
         display: flex;
@@ -470,7 +472,8 @@
     .footer{
         flex-direction: column;
         gap: 30px;
-        padding: 20px 60px;
+        padding: 20px 30px;
+        /* width: 100%; */
     }
     .col p{
         margin-bottom: 10px;
